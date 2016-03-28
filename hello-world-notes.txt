@@ -1,0 +1,132 @@
+########################################################################
+Hello World Apps
+########################################################################
+- Executable artifacts from Git
+- Pre-built Dockerfiles/images
+- PaaS ready (CF, Heroku)
+
+########################################################################
+
+
+-------------------
+Java
+-------------------
+supported artifact types (Grails, Groovy, Java, Play Framework, Spring Boot, and Servlet)
+App Servers:  Tomcat, JBOSS, Jetty
+
+Servlet
+	- WAR
+		<build war using Gradle or Maven>
+		my-application.war
+
+Java Main
+	- Executable JARs
+		<build jar using Gradle or Maven>
+		my-application.jar
+
+Spring Boot
+	- Executable JARs
+	<spring jar>
+	- Groovy
+	<spring grab>
+
+Grails
+	-WAR
+		my-application.war
+
+Groovy
+	Ratpack
+	-distZip
+		my-application.zip
+
+Spring Boot
+	Ratpack
+	-distZip
+		my-application.zip
+
+
+-------------------
+Ruby
+-------------------
+supported artifact types (Ruby, Rack, Rails or Sinatra)
+Run Bundler to create a Gemfile and a Gemfile.lock
+App Servers:  Sinatra, Passenger, Puma, Unicorn, Thin
+
+Rack
+	*.rb files
+	config.ru
+	Gemfile + Gemfile.lock (Bundler)
+
+
+Rails
+	*.rb files
+	Gemfile + Gemfile.lock (Bundler)
+	Procfile
+
+	-Passenger Phusion
+	-Puma
+		config/puma.rb
+	-Unicorn
+	-Thin
+
+
+Sinatra
+	*.rb files
+	Gemfile + Gemfile.lock (Bundler)
+
+
+
+-------------------
+Go
+-------------------
+
+
+-------------------
+JavaScript
+-------------------
+Node.js
+
+
+-------------------
+Scala
+-------------------
+
+
+-------------------
+Python
+-------------------
+
+
+-------------------
+C++
+-------------------
+
+
+-------------------
+PHP
+-------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
