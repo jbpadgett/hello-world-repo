@@ -1,10 +1,10 @@
 # hello-world-war-tomcat
 
 1. Clone repo
-```git clone foo```
+```git clone https://github.com/jbpadgett/hello-world-repo.git```
 
-2. Cd into foo
-```cd foo```
+2. Cd into java war-tomcat dir
+```cd java/war-tomcat/```
 
 3. Build WAR if not already done
 ```jar cfM hello.war *```
@@ -21,5 +21,5 @@ Windows
 ```"catalina.bat start" or "startup.bat"```
 
 6. Hit the hello page with browser
-```http://localhost:8080/hello/hello.html```
+http://localhost:8080/hello/hello.html
 
