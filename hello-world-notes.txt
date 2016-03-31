@@ -15,8 +15,10 @@ App Servers:  Tomcat, JBOSS, Jetty
 
 Servlet
 	- WAR
-		<build war using Gradle or Maven>
+		<build war using Gradle or Maven or manually>
 		my-application.war
+	- .java
+		servlet api compiled
 
 Java Main
 	- Executable JARs
