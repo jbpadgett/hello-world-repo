@@ -14,10 +14,17 @@ cp /usr/local/Cellar/tomcat/8.0.33/libexec/bin/servlet-api.jar   /Library/Java/J
 ```cd hello-world-repo/java/servlet-tomcat/helloservlet/WEB-INF```
 
 
-3. Compile the src file(s)
+3. Compile the servlet from src file(s)
 ```javac -d classes src/mypkg/HelloServlet.java```
 or
 ```javac -cp $CLASSPATH:/usr/local/Cellar/tomcat/8.0.33/libexec/bin/servlet-api.jar -d classes src/mypkg/HelloServlet.java```
 
 
-4. 
+4. Build WAR  
+```jar cfM helloservlet.war *```
+
+
+5. Deploy WAR into tomcat catalina  
+```copy helloservlet.war /usr/local/Cellar/tomcat/8.0.33/libexec/webapps/helloservlet.war```
+
+

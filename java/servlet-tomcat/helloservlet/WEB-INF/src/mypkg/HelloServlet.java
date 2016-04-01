@@ -19,9 +19,9 @@ public class HelloServlet extends HttpServlet {
          out.println("<!DOCTYPE html>");
          out.println("<html><head>");
          out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>");
-         out.println("<title>Hello, World</title></head>");
+         out.println("<title>Hello World! from java servlet on tomcat</title></head>");
          out.println("<body>");
-         out.println("<h1>Hello, world!</h1>");  // says Hello
+         out.println("<h1>Hello World! from java servlet on tomcat</h1>");  // says Hello
          // Echo client's request information
          out.println("<p>Request URI: " + request.getRequestURI() + "</p>");
          out.println("<p>Protocol: " + request.getProtocol() + "</p>");
