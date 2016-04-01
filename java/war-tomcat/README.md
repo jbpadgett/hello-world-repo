@@ -26,5 +26,5 @@ Windows
 ```"catalina.bat start" or "startup.bat"```  
 
 6. Hit the hello page with browser  
-http://localhost:8080/hello/hello.html
+http://localhost:8080/hello.html
 
