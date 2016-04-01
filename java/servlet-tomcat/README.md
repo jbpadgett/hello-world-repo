@@ -3,8 +3,8 @@
 Java servlet hello world ready to run in tomcat app server.
 
 1. Set Classpath for tomcat-api.jar for compiling the jar  
-OSX
-	```export CLASSPATH="/usr/local/Cellar/tomcat/8.0.33/libexec/bin/bootstrap.jar:/usr/local/Cellar/tomcat/8.0.33/libexec/bin/tomcat-juli.jar:/usr/local/Cellar/tomcat/8.0.33/libexec/bin/servlet-api.jar"```
+	OSX  
+```export CLASSPATH="/usr/local/Cellar/tomcat/8.0.33/libexec/bin/bootstrap.jar:/usr/local/Cellar/tomcat/8.0.33/libexec/bin/tomcat-juli.jar:/usr/local/Cellar/tomcat/8.0.33/libexec/bin/servlet-api.jar"```
 
 	or
 
