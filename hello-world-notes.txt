@@ -27,6 +27,7 @@ Java Main
 
 Spring Boot
 	- Executable JARs
+	- Embedded app servers like Jetty
 	<spring jar>
 	- Groovy
 	<spring grab>
