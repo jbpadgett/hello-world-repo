@@ -40,10 +40,6 @@ Groovy
 	-distZip
 		my-application.zip
 
-Spring Boot
-	Ratpack
-	-distZip
-		my-application.zip
 
 
 -------------------
