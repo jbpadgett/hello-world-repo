@@ -61,6 +61,7 @@ Rails
 	Gemfile + Gemfile.lock (Bundler)
 	Procfile
 
+	-Default WEBrick
 	-Passenger Phusion
 	-Puma
 		config/puma.rb
