@@ -1,8 +1,7 @@
 # hello-world-gradle-springboot
 
 Java springboot based hello world ready to run.  
-Using an embedded app server like Jetty.
-Build tool is Gradle.  
+Using an embedded app server like Jetty.  Build tool is Gradle.  
 Adopted from https://github.com/spring-guides/gs-spring-boot.git  
 Steps 3-4 are optional if just using the ready made build jar in the repo.  
 
@@ -20,6 +19,6 @@ Steps 3-4 are optional if just using the ready made build jar in the repo.
 ```java -jar build/libs/gradle-springboot-0.1.0.jar```  
 
 5. Hit the hello page with browser  
-```http://localhost:8080```  
+http://localhost:8080  
 
 
