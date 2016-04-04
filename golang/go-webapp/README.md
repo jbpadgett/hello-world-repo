@@ -17,6 +17,6 @@ Step 3 is optional.  If running this hello world app unmodified, then skip to st
 ```./hello```  
 
 5. Hit the hello page with browser  
-http://localhost:8080/hello.html
+http://localhost:8080/hello.html  
 
 
