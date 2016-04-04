@@ -1,10 +1,12 @@
 # hello-world-ruby-sinatra
 
-1. Clone repo
-```git clone foo```
+Ruby Sinatra based hello world ready to run.  
 
-2. Cd into repo root dir
-```cd foo```
+1. Clone repo  
+```git clone https://github.com/jbpadgett/hello-world-repo.git```  
+
+2. Cd into ruby rails hello world dir  
+```cd ruby/sinatra```  
 
 3. Execute the app using Sinatra
 Rack

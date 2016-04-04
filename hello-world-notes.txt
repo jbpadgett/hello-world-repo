@@ -79,7 +79,8 @@ Sinatra
 -------------------
 Go
 -------------------
-
+	*.go files
+	* compiled executable ./hello
 
 
 -------------------
