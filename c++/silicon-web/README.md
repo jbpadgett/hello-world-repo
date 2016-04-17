@@ -24,9 +24,9 @@ Enterprise Linux:
 ```git clone https://github.com/matt-42/silicon.git```  
 ```cd silicon```  
 ```sudo mkdir /opt/silicon```  
-````./install.sh /opt/silicon```  
+```./install.sh /opt/silicon```  
 All the variables starting with _ are called symbols. They are the core of the static paradigm of the framework.  
-To generate their definition, use the ```iod_generate_symbols``` tool provided by the iod library and located in the directory ```/opt/silicon/bin```.  
+To generate their definition, use the ```iod_generate_symbols``` tool provided by the iod library and located in the directory.  
 ```cd /hello-world-repo/c++```  
 ```/opt/silicon/bin/iod_generate_symbols hello.cc symbols.hh```  
 
@@ -34,11 +34,6 @@ To generate their definition, use the ```iod_generate_symbols``` tool provided b
 ```clang++ -std=c++14 -I /opt/silicon/include hello.cc -lmicrohttpd -o hello```  
 
 6. Start the server and test  
-```./hello```  
-
-```curl "http://127.0.0.1:12345/hello"```  
-
-
-
-
+``` ./hello ```  
+``` curl "http://127.0.0.1:12345/hello" ```  
 
