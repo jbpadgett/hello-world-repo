@@ -30,9 +30,10 @@ cmake \
 ```
 `make`    
 `sudo make install`  
+
 5. Compile the App with the Wt server  
 `g++ -o hello hello.cc -lwthttp -lwt`  
-  
+
 6. Start the server and test  
 `./hello --docroot . --http-address 0.0.0.0 --http-port 9090`
 
