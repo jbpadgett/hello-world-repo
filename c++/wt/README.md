@@ -29,7 +29,8 @@ OSX:
      -DSSL_PREFIX=/usr/local/Cellar/openssl/1.0.2 \
     ../
 ```
-`make`
+
+`make`  
 `sudo make install`
 
 5. Compile the App with the Wt server
