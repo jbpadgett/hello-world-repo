@@ -5,7 +5,7 @@ A C++ Hello World app using the Silicon C++ web framework(<http://siliconframewo
 1. Clone repo  
 ```git clone https://github.com/jbpadgett/hello-world-repo.git```  
 
-2. Cd into ruby rails hello world dir  
+2. Cd into the Silicon hello world dir  
 ```cd c++/silicon```  
 
 3. Install the libmicrohttpd dependency
@@ -35,7 +35,6 @@ To generate their definition, use the ```iod_generate_symbols``` tool provided b
 
 6. Start the server and test  
 ```./hello```  
-
 ```curl "http://127.0.0.1:12345/hello"```  
 
 
