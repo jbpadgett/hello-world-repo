@@ -7,7 +7,7 @@ Step 3 is optional.  If running this hello world app unmodified, then skip to st
 1. Clone repo  
 ```git clone https://github.com/jbpadgett/hello-world-repo.git```  
 
-2. Cd into ruby rails hello world dir  
+2. Cd into golang hello world dir  
 ```cd golang/golang-webapp```  
 
 3. Build the go app  
