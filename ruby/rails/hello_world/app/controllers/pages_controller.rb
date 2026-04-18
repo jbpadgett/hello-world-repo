@@ -1,8 +1,5 @@
 class PagesController < ApplicationController
-
-def home
-  @greeting = "Hello world! from rails WEBrick"
-end
-
-
+  def home
+    @greeting = "Hello World! from Ruby on Rails"
+  end
 end

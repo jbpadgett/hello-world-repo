@@ -1,22 +1,18 @@
-# hello-world-golang
+# Hello World — Golang
 
-Golang hello world webapp ready to run.   
-Step 3 is optional.  If running this hello world app unmodified, then skip to step 4.  
+Go 1.24 stdlib HTTP server.
 
+## Docker
 
-1. Clone repo  
-```git clone https://github.com/jbpadgett/hello-world-repo.git```  
+```bash
+docker build -t hello-go .
+docker run -p 8080:8080 hello-go
+# Visit http://localhost:8080/hello.html
+```
 
-2. Cd into golang hello world dir  
-```cd golang/golang-webapp```  
+## Local Development
 
-3. Build the go app  
-```go build hello.go```  
- 
-4. Run the app  
-```./hello```  
-
-5. Hit the hello page with browser  
-http://localhost:8080/hello.html  
-
-
+```bash
+go build -o hello hello.go
+./hello
+```

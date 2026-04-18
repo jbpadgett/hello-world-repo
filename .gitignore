@@ -1,52 +1,48 @@
-# Ignore the damn OSX DS_Store files
+# OS files
 .DS_Store
+Thumbs.db
 
-
-# Ignore List
-*.rbc
-.bundle
-.config
-coverage
-InstalledFiles
-lib/bundler/man
-pkg
-rdoc
-spec/reports
-test/tmp
-test/version_tmp
-tmp
-.vagrant
-Berksfile.lock
-Gemfile.lock
+# IDE / Editor
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
 *~
-*#
 .#*
 \#*#
-.*.sw[a-z]
 *.un~
+
+# Ruby
 .bundle
+Gemfile.lock
+vendor/bundle
+tmp/
+log/
+
+# Java / Gradle
+.gradle/
+build/
+*.jar
+*.war
+*.class
+!gradle/wrapper/gradle-wrapper.jar
+
+# Node.js / Angular
+node_modules/
+dist/
+package-lock.json
+.angular/
+
+# Go
+# (project-level .gitignore handles binaries)
+
+# C++
+*.o
+*.out
+
+# Misc
+.env
 .cache
-.kitchen
-.kitchen.local.yml
-.coverage
-*~
-.#*
-\#*\#
-*.svn
-*.iml
-.project
-.idea
-.ssh
-.buildpath
-.colander/
-.rvmrc
-.rvmlog
-.chef/
-cookbooks/
-.metadata/
-
-
-# Ignore swp files
-*.swp
-
-
+coverage/
+*.log

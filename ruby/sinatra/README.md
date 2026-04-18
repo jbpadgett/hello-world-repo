@@ -1,18 +1,18 @@
-# hello-world-ruby-sinatra
+# Hello World — Ruby Sinatra
 
-Ruby Sinatra based hello world ready to run.  
+Sinatra 4.2 with Puma 7 on Ruby 3.3.
 
-1. Clone repo  
-```git clone https://github.com/jbpadgett/hello-world-repo.git```  
+## Docker
 
-2. Cd into ruby rails hello world dir  
-```cd ruby/sinatra```  
+```bash
+docker build -t hello-sinatra .
+docker run -p 9292:9292 hello-sinatra
+# Visit http://localhost:9292
+```
 
-3. Execute the app using Sinatra
-Rack
-```rackup config.ru```
+## Local Development
 
-Directly
-```ruby hello.rb```
-
-
+```bash
+bundle install
+bundle exec rackup -o 0.0.0.0
+```

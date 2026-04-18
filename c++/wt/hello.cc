@@ -1,11 +1,11 @@
-//Hello World app using the C++ Wt web server platform
+// Hello World app using the C++ Wt 4.x web server platform
 
-#include <Wt/WApplication>
-#include <Wt/WBreak>
-#include <Wt/WContainerWidget>
-#include <Wt/WLineEdit>
-#include <Wt/WPushButton>
-#include <Wt/WText>
+#include <Wt/WApplication.h>
+#include <Wt/WBreak.h>
+#include <Wt/WContainerWidget.h>
+#include <Wt/WLineEdit.h>
+#include <Wt/WPushButton.h>
+#include <Wt/WText.h>
 
 class HelloApplication : public Wt::WApplication
 {
@@ -24,11 +24,11 @@ HelloApplication::HelloApplication(const Wt::WEnvironment& env)
 {
     setTitle("Wt C++ Hello World!");
 
-    root()->addWidget(new Wt::WText("HELLO WORLD! via the Wt C++ Web Server ===>>  Type your name:  "));
-    nameEdit_ = new Wt::WLineEdit(root());
-    Wt::WPushButton *button = new Wt::WPushButton("Hello World me!", root());
-    root()->addWidget(new Wt::WBreak());
-    greeting_ = new Wt::WText(root());
+    root()->addNew<Wt::WText>("HELLO WORLD! via the Wt C++ Web Server ===>>  Type your name:  ");
+    nameEdit_ = root()->addNew<Wt::WLineEdit>();
+    auto button = root()->addNew<Wt::WPushButton>("Hello World me!");
+    root()->addNew<Wt::WBreak>();
+    greeting_ = root()->addNew<Wt::WText>();
     button->clicked().connect(this, &HelloApplication::greet);
 }
 
@@ -37,13 +37,9 @@ void HelloApplication::greet()
     greeting_->setText("HELLO WORLD!!!,   " + nameEdit_->text());
 }
 
-Wt::WApplication *createApplication(const Wt::WEnvironment& env)
-{
-    return new HelloApplication(env);
-}
-
-//Run the server and start the app
 int main(int argc, char **argv)
 {
-    return Wt::WRun(argc, argv, &createApplication);
+    return Wt::WRun(argc, argv, [](const Wt::WEnvironment& env) {
+        return std::make_unique<HelloApplication>(env);
+    });
 }
